@@ -1,0 +1,11 @@
+:root{
+    --background-color : #FDF4DC;
+    --text : #000000;
+}
+
+
+
+body{
+    background-color: var(--background-color);
+    font-family: ClashDisplay-Regular, serif;
+}
