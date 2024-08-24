@@ -96,6 +96,7 @@
 
     .projects{
         width: 75vw;
+        max-width: 75vw;
         margin-top: 30px;
         box-sizing: border-box;
         border-top: 1px solid black;
@@ -112,6 +113,7 @@
         border-bottom: 1px solid black;
         border-right: 1px solid black;
         font-size: 32px;
+        box-sizing: border-box;
     }
 
     .project:nth-child(2n){
@@ -141,6 +143,7 @@
         opacity: 1;
         transition: opacity 0.5s;
         transition-delay: 0.5s;
+
     }
     .project-hover p{
         padding: 10px;

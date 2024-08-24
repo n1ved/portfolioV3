@@ -10,10 +10,13 @@
     right: 0;
     height: 100vh;
     width: 25vw;
+    max-width: 25vw;
     box-sizing: border-box;
     align-items: center;
     justify-content: space-evenly;
     border-left: black 1px solid;
+    z-index: 3;
+    background-color: #FDF4DC;
 }
 .navbar a{
     display: flex;
