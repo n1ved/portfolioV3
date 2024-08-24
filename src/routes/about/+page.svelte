@@ -137,7 +137,8 @@
     }
     .experience{
         display: flex;
-        flex-direction: column;        margin: 50px 0;
+        flex-direction: column;
+        margin: 50px 0;
         justify-content: space-between;
         width: 50vw;
         border: 1px solid black;
@@ -165,4 +166,52 @@
         padding: 10px;
         border-top: 1px solid black;
     }
+
+    @media screen and (max-width: 480px){
+        .main {
+            margin: 20px;
+            max-width: 100vw;
+        }
+        .title {
+            font-size: 48px;
+        }
+
+        .desc {
+            font-size: 18px;
+            width: 100%;
+        }
+
+        .skills{
+            width: 100%;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .skills ul , .experience ul{
+            font-size: 18px;
+            flex-wrap: wrap;
+        }
+
+        .skills ul li:first-child{
+            width: 100%;
+            border-right: none;
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+
+        .skills ul li{
+            padding: 5px;
+        }
+
+        .experience{
+            width: 100%;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .experience ul li{
+            padding: 5px;
+        }
+    }
+
 </style>
