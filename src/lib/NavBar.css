@@ -17,6 +17,8 @@
     border-left: black 1px solid;
     z-index: 3;
     background-color: #FDF4DC;
+    overflow: hidden;
+
 }
 .navbar a{
     display: flex;
@@ -113,19 +115,23 @@ a:hover{
     }
 
     .navbar{
-        display: none;
+        display: flex;
         width: 100vw;
-        max-width: 100vw;
+        max-width: 0;
         flex-direction: column;
-        height: 90vh;
+        height: 100vh;
         position: absolute;
         border-bottom: 1px black solid;
         border-left: none;
         margin-top: 10vh;
         box-sizing: border-box;
+        transition: all 0.5s;
     }
     .active{
         display: flex;
+        max-width: 100vw;
+        border-left: 1px solid black;
+        transition: all 0.5s;
     }
     .navbar a{
         font-size: 28px;

@@ -2,7 +2,7 @@
     import './NavBar.css'
 
     function sleep() {
-        return new Promise(resolve => setTimeout(resolve, 600));
+        return new Promise(resolve => setTimeout(resolve, 250));
     }
 
     function toggleMenu() {
