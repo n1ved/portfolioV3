@@ -80,3 +80,69 @@ a:hover{
     transition: all 0.5s;
     transform-origin: left;
 }
+
+.navbar-hamburger{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 480px){
+    .navbar-hamburger{
+        display: flex;
+        height: 10vh;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    .menu-btn{
+        background-color: #FDF4DC;
+        box-shadow: none;
+        border: none;
+        font-size: 28px;
+        height: 100%;
+        width: 40%;
+        vertical-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid black;
+    }
+
+    .navbar{
+        display: none;
+        width: 100vw;
+        max-width: 100vw;
+        flex-direction: column;
+        height: 90vh;
+        position: absolute;
+        border-bottom: 1px black solid;
+        border-left: none;
+        margin-top: 10vh;
+        box-sizing: border-box;
+    }
+    .active{
+        display: flex;
+    }
+    .navbar a{
+        font-size: 28px;
+    }
+    .socials a:last-child{
+        border-bottom: none;
+    }
+
+    .socials div:first-child{
+        width: 20vw;
+    }
+
+    .socials div:last-child {
+        min-width: 80vw;
+    }
+
+    .socials a{
+        width: 100%;
+    }
+}
