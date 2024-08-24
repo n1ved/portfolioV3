@@ -127,8 +127,8 @@
         display: none;
     }
     .project-hover{
-        opacity: 0;
         display: none;
+        opacity: 0;
     }
 
     .project:hover .project-hover{
@@ -141,8 +141,7 @@
         font-size: 20px;
         box-sizing: border-box;
         opacity: 1;
-        transition: opacity 0.5s;
-        transition-delay: 0.5s;
+        transition: all 0.5s;
 
     }
     .project-hover p{

@@ -16,5 +16,5 @@ body{
 }
 
 *{
-    scrollbar-width: none;
+    transition: all 0.5s;
 }
