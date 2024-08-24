@@ -43,4 +43,23 @@
     span{
         font-weight: 600;
     }
+
+    @media screen and (max-width: 480px){
+        div{
+            align-items: center;
+            max-width: 100vw;
+            max-height: 90vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .name{
+            font-size: 120px;
+            text-align: center;
+        }
+        .home_desc{
+            font-size: 16px;
+            width: 100%;
+            text-align: center;
+        }
+    }
 </style>
