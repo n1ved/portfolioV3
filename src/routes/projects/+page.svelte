@@ -72,7 +72,7 @@
         {/each}
     </div>
     <div class="footer">
-        Find More on <b>Github</b>
+        Find More on <a href="https://github.com/n1ved?tab=repositories"><b>Github</b></a>
     </div>
 </div>
 
@@ -188,7 +188,48 @@
     .footer{
         align-self: center;
         padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+    .footer a{
+        text-decoration: none;
+        color: black;
     }
 
+    @media screen and (max-width: 480px){
+        .main {
+            margin-top : 30px;
+            max-width: 100vw;
+        }
+        .title {
+            font-size: 48px;
+            margin-left: 20px;
+        }
+
+        .projects{
+            width: 100vw;
+            max-width: 100vw;
+            grid-template-columns: 1fr;
+        }
+
+        .project{
+            border-bottom: 1px solid black;
+            height: 200px;
+        }
+
+        .project h2{
+            font-size: 40px;
+        }
+
+        .project:nth-child(3n){
+            border-right: 1px solid black;
+        }
+
+
+        .footer{
+            align-self: center;
+            padding-top: 50px;
+        }
+    }
 
 </style>
