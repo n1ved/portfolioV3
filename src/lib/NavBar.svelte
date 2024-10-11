@@ -42,7 +42,7 @@
             <a href="https://linkedin.com/in/n1ved" target="_blank" on:click={toggleMenuOnLinks}>LinkedIn</a>
             <a href="https://fosstodon.org/@n1ved/" target="_blank" on:click={toggleMenuOnLinks}>Mastodon</a>
             <a href="https://t.me/n1vxd" target="_blank" on:click={toggleMenuOnLinks}>Telegram</a>
-            <a href="mailto:n1ved@proton.me" target="_blank" on:click={toggleMenuOnLinks}>Email</a>
+            <a href="mailto:nivdrsalini@gmail.com" target="_blank" on:click={toggleMenuOnLinks}>Email</a>
         </div>
     </div>
 </div>
