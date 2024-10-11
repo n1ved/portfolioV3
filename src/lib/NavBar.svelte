@@ -1,5 +1,6 @@
 <script>
     import './NavBar.css'
+    import {base} from '$app/paths'
 
     function sleep() {
         return new Promise(resolve => setTimeout(resolve, 250));
@@ -27,10 +28,10 @@
 </div>
 <div class="navbar">
     <div class="links">
-        <a href="/" on:click={toggleMenuOnLinks}>Home</a>
-        <a href="/about" on:click={toggleMenuOnLinks}>About</a>
-        <a href="/projects" on:click={toggleMenuOnLinks}>Projects</a>
-        <a href="/docs/resume.pdf" target="_blank" on:click={toggleMenuOnLinks}>Resume</a>
+        <a href="{base}/" on:click={toggleMenuOnLinks}>Home</a>
+        <a href="{base}/about" on:click={toggleMenuOnLinks}>About</a>
+        <a href="{base}/projects" on:click={toggleMenuOnLinks}>Projects</a>
+        <a href="{base}/docs/resume.pdf" target="_blank" on:click={toggleMenuOnLinks}>Resume</a>
     </div>
     <div class="socials">
         <div>
