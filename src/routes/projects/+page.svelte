@@ -195,6 +195,9 @@
         text-decoration: none;
         color: black;
     }
+    .footer a:hover{
+        color: #FDF4DC;
+    }
 
     @media screen and (max-width: 480px){
         .main {

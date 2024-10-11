@@ -119,7 +119,7 @@ a:hover{
         width: 100vw;
         max-width: 0;
         flex-direction: column;
-        height: 100vh;
+        height: 90vh;
         position: absolute;
         border-bottom: 1px black solid;
         border-left: none;

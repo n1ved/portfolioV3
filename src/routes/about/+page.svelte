@@ -25,14 +25,14 @@
         {
             role : 'Tech Team Member',
             org: 'FOSSMEC',
-            start : '2023',
-            end : 'Present'
+            start : 'May 2023',
+            end : 'May 2024'
         },
         {
             role : 'Tech Trainee',
             org: 'TinkerHubMEC',
-            start : '2023',
-            end : 'Present'
+            start : 'May 2023',
+            end : 'May 2024'
         }
     ]
 </script>
@@ -41,7 +41,7 @@
     <h1 class="title">About</h1>
     <p class="desc">
         <b>Hi !</b><br/>
-        I am Nived , A computer science student from Kerala . Currently in my third year of BTech Degree and exploring different technologies in this domain
+        I am Nived , A computer science student from Kerala . Currently in my third year of BTech Degree and tinkering with stuff in free time :D
         <br/>
     </p>
 
@@ -65,8 +65,8 @@
         <ul>
             {#each experience as l}
                 <li>
-                    <div><b>{l.role}</b>&nbsp;&nbsp;at&nbsp;&nbsp;{l.org}</div>
-                    <div>{l.start} - {l.end}</div>
+                    <div class="position"><b>{l.role}</b>&nbsp;&nbsp;at&nbsp;&nbsp;{l.org}</div>
+                    <div class="time">{l.start} - {l.end}</div>
                 </li>
             {/each}
         </ul>
@@ -206,11 +206,22 @@
         .experience{
             width: 100%;
             font-size: 18px;
-            margin: 20px 0;
+            margin: 10px 0;
+            overflow: hidden;
         }
 
         .experience ul li{
             padding: 5px;
+        }
+        .position{
+            text-align: start;
+            width: 200px;
+            text-wrap: wrap;
+        }
+        .time{
+            text-align: start;
+            width: 100px;
+            text-wrap: wrap;
         }
     }
 
