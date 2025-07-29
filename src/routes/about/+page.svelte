@@ -1,48 +1,57 @@
 <script>
+    let lang = ["C", "C++", "HTML", "CSS", "JavaScript", "Dart"];
 
-    let lang = [
-        'C',
-        'C++',
-        'HTML',
-        'CSS',
-        'JavaScript',
-        'Dart'
-    ]
-
-    let frameworks = [
-        'ReactJS',
-        'NextJS',
-        'Flutter',
-    ]
+    let frameworks = ["ReactJS", "NextJS", "Flutter"];
 
     let experience = [
         {
-            role : "Frontend Developer",
-            org: 'ETHICVAL',
-            start : '2023',
-            end : 'Present'
+            role: "Frontend Developer",
+            org: "Krisko",
+            start: "Dec 2023",
+            end: "May 2024",
+            orgurl: "https://krisko.in",
+        },
+    ];
+
+    let volunteering = [
+        {
+            role: "Design Head",
+            org: "MACS MEC",
+            start: "Jul 2025",
+            end: "Present",
+            orgurl: "https://mec.ac.in",
         },
         {
-            role : 'Tech Team Member',
-            org: 'FOSSMEC',
-            start : 'May 2023',
-            end : 'May 2024'
+            role: "App & Web Team Member",
+            org: "Excel MEC",
+            start: "Sep 2024",
+            end: "Present",
+            orgurl: "https://excelmec.org",
         },
         {
-            role : 'Tech Trainee',
-            org: 'TinkerHubMEC',
-            start : 'May 2023',
-            end : 'May 2024'
-        }
-    ]
+            role: "Tech Team Member",
+            org: "FOSSMEC",
+            start: "May 2023",
+            end: "May 2024",
+            orgurl: "https://foss.mec.ac.in",
+        },
+        {
+            role: "Tech Trainee",
+            org: "TinkerHubMEC",
+            start: "May 2023",
+            end: "May 2024",
+            orgurl: "https://mec.tinkerhub.org",
+        },
+    ];
 </script>
 
 <div class="main">
     <h1 class="title">About</h1>
     <p class="desc">
-        <b>Hi !</b><br/>
-        I am Nived , A computer science student from Kerala . Currently in my third year of BTech Degree and tinkering with stuff in free time :D
-        <br/>
+        <b>Hi !</b><br />
+        I am Nived , A computer science student from Kerala . Currently in my final
+        year of BTech Degree and tinkering with stuff in free time :D
+        <br />
     </p>
 
     <div class="skills">
@@ -65,7 +74,28 @@
         <ul>
             {#each experience as l}
                 <li>
-                    <div class="position"><b>{l.role}</b>&nbsp;&nbsp;at&nbsp;&nbsp;{l.org}</div>
+                    <div class="position">
+                        <b>{l.role}</b>&nbsp;&nbsp;at&nbsp;&nbsp;<a
+                            href={l.orgurl}
+                            target="_blank">{l.org}</a
+                        >
+                    </div>
+                    <div class="time">{l.start} - {l.end}</div>
+                </li>
+            {/each}
+        </ul>
+    </div>
+    <div class="experience">
+        <h2>Volunteering</h2>
+        <ul>
+            {#each volunteering as l}
+                <li>
+                    <div class="position">
+                        <b>{l.role}</b>&nbsp;&nbsp;at&nbsp;&nbsp;<a
+                            href={l.orgurl}
+                            target="_blank">{l.org}</a
+                        >
+                    </div>
                     <div class="time">{l.start} - {l.end}</div>
                 </li>
             {/each}
@@ -92,13 +122,12 @@
 
     .desc {
         font-size: 24px;
-        font-family: ClashDisplay-Light, 'serif';
+        font-family: ClashDisplay-Light, "serif";
         font-weight: 300;
         width: 70%;
-
     }
 
-    .skills{
+    .skills {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -108,12 +137,12 @@
         margin: 50px 0;
     }
 
-    .skills h2{
+    .skills h2 {
         padding: 10px;
         font-weight: 500;
     }
 
-    .skills ul{
+    .skills ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -123,19 +152,19 @@
         font-size: 26px;
     }
 
-    .skills ul li{
+    .skills ul li {
         padding: 10px;
         border-right: 1px solid black;
     }
 
-    .skills ul li:first-child{
+    .skills ul li:first-child {
         width: 200px;
     }
 
-    .skills ul li:last-child{
+    .skills ul li:last-child {
         border-right: none;
     }
-    .experience{
+    .experience {
         display: flex;
         flex-direction: column;
         margin: 50px 0;
@@ -146,12 +175,12 @@
         font-weight: 200;
     }
 
-    .experience h2{
+    .experience h2 {
         padding: 10px;
         font-weight: 500;
     }
 
-    .experience ul{
+    .experience ul {
         list-style-type: none;
         margin: 0;
         display: flex;
@@ -159,7 +188,7 @@
         font-size: 26px;
     }
 
-    .experience ul li{
+    .experience ul li {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -167,7 +196,19 @@
         border-top: 1px solid black;
     }
 
-    @media screen and (max-width: 480px){
+    .experience .position b {
+        font-weight: 700;
+    }
+
+    .experience a {
+        color: black;
+        text-decoration: none;
+    }
+    .experience a:hover {
+        color: #fdf4dc;
+    }
+
+    @media screen and (max-width: 480px) {
         .main {
             margin: 20px;
             max-width: 100vw;
@@ -181,48 +222,48 @@
             width: 100%;
         }
 
-        .skills{
+        .skills {
             width: 100%;
             font-size: 20px;
             margin: 20px 0;
         }
 
-        .skills ul , .experience ul{
+        .skills ul,
+        .experience ul {
             font-size: 18px;
             flex-wrap: wrap;
         }
 
-        .skills ul li:first-child{
+        .skills ul li:first-child {
             width: 100%;
             border-right: none;
             border-bottom: 1px solid black;
             text-align: center;
         }
 
-        .skills ul li{
+        .skills ul li {
             padding: 5px;
         }
 
-        .experience{
+        .experience {
             width: 100%;
             font-size: 18px;
             margin: 10px 0;
             overflow: hidden;
         }
 
-        .experience ul li{
+        .experience ul li {
             padding: 5px;
         }
-        .position{
+        .position {
             text-align: start;
             width: 200px;
             text-wrap: wrap;
         }
-        .time{
+        .time {
             text-align: start;
             width: 100px;
             text-wrap: wrap;
         }
     }
-
 </style>
